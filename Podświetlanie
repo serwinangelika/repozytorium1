@@ -1,0 +1,31 @@
+def setup():
+    size(400, 400)
+    textSize(128)
+    textAlign(CENTER)
+    background(0)
+
+
+def draw():
+    text("A", width/2-75, (height/3)*2)
+    text("S", width/2+75, (height/3)*2)
+    print(mouseX, mouseY)
+
+    if keyCode == 37:
+        fill(150, 200, 40)
+        text("A", width/2-75, (height/3)*2)
+        fill(250)
+        
+    if keyCode == 39:
+        fill(150, 200, 40)
+        text("S", width/2+75, (height/3)*2)
+        fill(250)
+        
+    if (mouseX >= 80 and mouseX <= 170 and mouseY >= 170 and mouseY <= 270):
+        fill(150, 200, 40)
+        text("A", width/2-75, (height/3)*2)
+        fill(250)
+
+    if (mouseX >= 245 and mouseX <= 305 and mouseY >= 170 and mouseY <= 270):
+        fill(150, 200, 40)
+        text("S", width/2+75, (height/3)*2)
+        fill(250)
