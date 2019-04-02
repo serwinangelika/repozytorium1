@@ -1,0 +1,51 @@
+#Angelika Serwin
+
+
+#add_library('pdf')
+
+def setup():
+    size(198, 255) #, PDF, "id_photo")
+    global id_photo
+    id_photo = loadImage("prawidlowe-1.jpg")
+    image(id_photo, 0, 0)
+    #beginRecord(PDF, "id_photo.pdf")
+    print("Nacisnij spacje")
+    
+def draw():
+    if keyCode == 32:
+        print(keyCode)
+        print(mouseX, mouseY)
+        s = createShape()
+        s.beginShape()
+        s.fill(0, 0, 0)
+        s.noStroke()
+        s.vertex(100, 174)
+        s.vertex(109, 171)
+        s.vertex(118, 173)
+        s.vertex(125, 175)
+        s.vertex(135, 170)
+        s.vertex(134, 177)
+        s.vertex(122, 179)
+        s.vertex(112, 179)
+        s.vertex(100, 179)
+        s.vertex(88, 179)
+        s.vertex(78, 179)
+        s.vertex(66, 177)
+        s.vertex(65, 170)
+        s.vertex(75, 175)
+        s.vertex(82, 173)
+        s.vertex(91, 171)
+        s.endShape(CLOSE)
+        shape(s)
+        
+        ellipse(129, 129, 35, 35)
+        fill(242, 181, 0)
+        
+        
+        ellipse(70, 129, 35, 35)
+        fill(242, 181, 0)
+        
+        line(86, 130, 112, 130)
+
+        #endRecord()
+        #exit()
