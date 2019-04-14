@@ -34,3 +34,5 @@ def draw():
         fill(150, 200, 40)
         text("S", width/2+75, (height/3)*2)
         fill(250)
+    
+#brakuje też własnego kształtu, który miałpodkreślać litery
